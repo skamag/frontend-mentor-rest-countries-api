@@ -1,0 +1,65 @@
+main{
+    padding: 0 5%;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.searchbarContainer, .selectContainer{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 8px rgb(229, 229, 229);
+    padding: 15px;
+    font-size: 0.75rem;
+}
+.searchbarContainer{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+.selectContainer{
+    width: 15%;
+}
+.searchbarContainer input, .selectContainer select{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+input:focus, select:focus{
+    outline: none;
+}
+
+/* Grid */
+.cardGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+@media screen and (max-width: 500px){
+    .cardGrid{
+        grid-template-columns: auto;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .searchbarContainer{
+        width: 100%;
+    }
+    .selectContainer{
+        width: fit-content;
+    }
+}

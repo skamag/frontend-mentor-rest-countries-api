@@ -6,11 +6,14 @@
     box-shadow: 0 1px 8px rgb(228, 228, 228);
     background-color: white;
 }
-.darkMode{
+.darkModeButton{
     display: flex;
     gap: 10px;
     cursor: pointer;
 }
-.darkMode:hover{
+.darkModeButton:hover{
     opacity: 0.5;
+}
+.darkModeHeader{
+    background-color: blue;
 }

@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Card from './Card'
 import '../styles/main.css'
 
-export default function Main() {
+export default function Main({ darkMode, setDarkMode }) {
     const [region, setRegion] = useState('')
     const [searchText, setSearchText] = useState('')
 

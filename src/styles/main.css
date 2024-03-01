@@ -2,11 +2,15 @@ main{
     padding: 0 5%;
 }
 
+.darkModeMain{
+    background-color: rgb(80, 80, 112);
+}
+
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
-    margin: 30px 0;
+    padding: 30px 0;
 }
 .searchbarContainer, .selectContainer{
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
